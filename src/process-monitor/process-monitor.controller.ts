@@ -1,7 +1,7 @@
-import { Controller, Get } from '@nestjs/common';
-import { ProcessMonitorService } from './process-monitor.service';
+import { Controller, Get } from "@nestjs/common";
+import { ProcessMonitorService } from "./process-monitor.service";
 
-@Controller('process')
+@Controller()
 export class ProcessController {
   constructor(private readonly processMonitorService: ProcessMonitorService) {}
 

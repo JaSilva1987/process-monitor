@@ -10,12 +10,13 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const process_monitor_controller_1 = require("./process-monitor/process-monitor.controller");
 const process_monitor_service_1 = require("./process-monitor/process-monitor.service");
+const schedule_1 = require("@nestjs/schedule");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [],
+        imports: [schedule_1.ScheduleModule.forRoot()],
         controllers: [process_monitor_controller_1.ProcessController],
         providers: [process_monitor_service_1.ProcessMonitorService],
     })

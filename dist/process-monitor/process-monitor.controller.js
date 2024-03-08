@@ -28,7 +28,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], ProcessController.prototype, "getProcesses", null);
 exports.ProcessController = ProcessController = __decorate([
-    (0, common_1.Controller)('process'),
+    (0, common_1.Controller)(),
     __metadata("design:paramtypes", [process_monitor_service_1.ProcessMonitorService])
 ], ProcessController);
 //# sourceMappingURL=process-monitor.controller.js.map
